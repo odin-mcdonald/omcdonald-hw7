@@ -16,35 +16,51 @@
                 <legend> Contact information</legend>
                 <div>
                 <label for="fname"> First name:
-                    <input id="fname" type="text" autofocus>
+                    <input id="fname" type="text" autofocus required>
                 </label>
             </div>
                 <div>
                 <label for="lname"> Last name:
-                    <input id="lname" type="text">
+                    <input id="lname" type="text" required>
                 </label>
             </div>
                 <div>
-                <label for="email"> Email <address></address>:
-                    <input id="email" type="email">
+                    <label for="gender"> Gender:</label>
+
+                    <select name="gender" id="gender" required>
+                        <option value="please-select">Please select...</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="non-binary">Non-binary</option>
+                        <option value="decline">Decline to answer</option>
+                      </select>                 
+            </div>
+                <div>
+                <label for="email"> Email<address></address>:
+                    <input id="email" type="email" >
                 </label>
             </div>
-        </fieldset>
+       
         <div>
-            <label for="cars">Choose a car:</label>
+            <label for="metal-band">Choose your favorite metal band:</label>
 
-            <select name="cars" id="cars">
-              <option value="volvo">Volvo</option>
-              <option value="saab">Saab</option>
-              <option value="mercedes">Mercedes</option>
-              <option value="audi">Audi</option>
+            <select name="metal-band" id="metal-band">
+              <option value="system-of-a-down">System of a Down</option>
+              <option value="gojira">Gojira</option>
+              <option value="slipknot">Slipknot</option>
+              <option value="tool">Tool</option>
             </select>
             </div>
+        </fieldset>
    </form>
    <button onclick="window.location.href='./survey-2.html';">
     Next
 </button>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ipsum repudiandae! Fugit natus veniam minima esse velit ducimus perspiciatis vel labore. Sapiente corrupti veritatis quo, dolore esse laboriosam expedita facilis.</p>
+    <h1>Fun Facts!</h1>
+    <h2>Tool</h2>
+        <p>The discordant sounds at the start of the song “Disgustipated” were created by the band smashing up and hitting three pianos and some shotguns with a sledgehammer... and the sound for the unusual short instrumental in “Mantra” was created by Maynard squeezing his cat.</p>
+    <h2>Slipknot</h2>
+    <p>The band  refused to wash their clown masks throughout the course of their tour so they could carry the “spirit” of the tour with them wherever they went.</p>
    <p>page 1 of 2</p>
 </body>
 </html>
